@@ -30,4 +30,22 @@ public class GewinnModel {
             runderErgebnis=-10;
         }
     }
+
+    public boolean hatGewonnen(){
+        if(gesamtPunkte>=100){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    public boolean hatVerloren(){
+        if(gesamtPunkte<=0){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 }
