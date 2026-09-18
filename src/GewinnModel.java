@@ -48,4 +48,20 @@ public class GewinnModel {
             return false;
         }
     }
+
+    public int getGesamtPunkte() {
+        return gesamtPunkte;
+    }
+
+    public int getSpielerZahl() {
+        return spielerZahl;
+    }
+
+    public int getComputerZahl() {
+        return computerZahl;
+    }
+
+    public int getRunderErgebnis() {
+        return runderErgebnis;
+    }
 }
