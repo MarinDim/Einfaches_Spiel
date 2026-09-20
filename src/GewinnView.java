@@ -60,6 +60,7 @@ public class GewinnView extends JFrame{
 
         add(untenPanel, BorderLayout.SOUTH);
 
+        button.setEnabled(false);
     }
 
     public JLabel getRundenLabel() {

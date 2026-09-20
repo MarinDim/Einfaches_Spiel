@@ -52,11 +52,17 @@ public class GewinnController {
         }
 
         view.getPunkteLabel().setText(Integer.toString(model.getGesamtPunkte()));
+
+        view.getSpielerField().setEditable(false); //Eingabe sperren
+        view.getButton().setEnabled(true); //Knopf bzw. Button aktivieren
     }
 
     public void rundeZuruecksetzen(){
         view.getSpielerField().setText("");
         view.getComputerField().setText("");
         view.getRundenLabel().setText("Ein Zahl von 1 bis 9 wählen");
+
+        view.getSpielerField().setEditable(true); //Eingabe wieder freigeben
+        view.getButton().setEnabled(false); //Button deaktivieren
     }
 }
