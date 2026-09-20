@@ -17,6 +17,7 @@ public class GewinnView extends JFrame{
         setSize(500,250);
         setLayout(new BorderLayout());
 
+
         //Oben(North)
         JPanel titelPanel=new JPanel(new GridLayout(2,2,5,5));
 
@@ -33,6 +34,15 @@ public class GewinnView extends JFrame{
         titelPanel.add(rundenLabel);
 
         add(titelPanel, BorderLayout.NORTH);
+
+
+        //Mitte(Center)
+        JPanel centerPanel=new JPanel(new GridLayout(2,2,10,5));
+
+        centerPanel.add(new JLabel("Deine Zahl:"));
+        centerPanel.add(new JLabel("Computer:"));
+
+
     }
 
     public JLabel getRundenLabel() {
