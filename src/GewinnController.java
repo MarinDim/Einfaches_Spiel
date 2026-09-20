@@ -47,8 +47,11 @@ public class GewinnController {
         if(model.hatGewonnen()==true){
             view.getRundenLabel().setText("Gewonnen");
         }
-        else{
+        else if(model.hatVerloren()==true){
             view.getRundenLabel().setText("Verloren");
+        }
+        else{
+            view.getRundenLabel().setText(ergebnisText);
         }
 
         view.getPunkteLabel().setText(Integer.toString(model.getGesamtPunkte()));

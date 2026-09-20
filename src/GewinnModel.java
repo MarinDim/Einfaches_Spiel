@@ -29,6 +29,7 @@ public class GewinnModel {
         else{
             rundenErgebnis=-10;
         }
+        gesamtPunkte+=rundenErgebnis;
     }
 
     public boolean hatGewonnen(){

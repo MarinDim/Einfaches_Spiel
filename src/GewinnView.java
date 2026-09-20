@@ -35,8 +35,8 @@ public class GewinnView extends JFrame{
         //Alle zum hauptpanel hinzufügen
         titelPanel.add(rundenTitelLabel);
         titelPanel.add(punkteTitelLabel);
-        titelPanel.add(punkteLabel);
         titelPanel.add(rundenLabel);
+        titelPanel.add(punkteLabel);
 
         add(titelPanel, BorderLayout.NORTH);
 
@@ -52,8 +52,8 @@ public class GewinnView extends JFrame{
         computerField=new JTextField();
         computerField.setEditable(false);
 
-        centerPanel.add(computerField);
         centerPanel.add(spielerField);
+        centerPanel.add(computerField);
 
         add(centerPanel, BorderLayout.CENTER);
 
