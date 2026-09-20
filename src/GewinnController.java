@@ -9,6 +9,9 @@ public class GewinnController {
     public GewinnController(GewinnModel model, GewinnView view){
         this.model=model;
         this.view=view;
+
+        this.view.getSpielerField().addActionListener(e -> spielRunde());
+        this.view.getButton().addActionListener(e->rundeZuruecksetzen());
     }
 
     public void spielRunde(){
@@ -21,8 +24,8 @@ public class GewinnController {
                 return;
             }
 
-            model.berechneRunde(eingabeZahl);
-            viewAktualisieren();
+            model.berechneRunde(eingabeZahl); //Berechnen
+            viewAktualisieren(); //View Aktualisieren
         }
         catch(NumberFormatException e){
             JOptionPane.showMessageDialog(view, "Ein Zahl zwischen 1 und 9 eingeben!", "Falsche Eingabe", JOptionPane.ERROR_MESSAGE);
