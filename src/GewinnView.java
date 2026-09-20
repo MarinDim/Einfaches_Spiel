@@ -16,6 +16,23 @@ public class GewinnView extends JFrame{
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(500,250);
         setLayout(new BorderLayout());
+
+        //Oben(North)
+        JPanel titelPanel=new JPanel(new GridLayout(2,2,5,5));
+
+        rundenTitelLabel=new JLabel("Rundenergebnis:");
+        punkteTitelLabel=new JLabel("Gesamtpunkte:");
+
+        rundenLabel=new JLabel("Tippe eine Zahl von 1 bis 9");
+        punkteLabel=new JLabel("Gesamtpunkte: 30");
+
+        //Alle zum hauptpanel hinzufügen
+        titelPanel.add(rundenTitelLabel);
+        titelPanel.add(punkteTitelLabel);
+        titelPanel.add(punkteLabel);
+        titelPanel.add(rundenLabel);
+
+        add(titelPanel, BorderLayout.NORTH);
     }
 
     public JLabel getRundenLabel() {
