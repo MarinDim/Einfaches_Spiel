@@ -52,6 +52,14 @@ public class GewinnView extends JFrame{
 
         add(centerPanel, BorderLayout.CENTER);
 
+
+        //Unten(South)
+        JPanel untenPanel=new JPanel();
+        button=new JButton("Noch einmal!");
+        untenPanel.add(button);
+
+        add(untenPanel, BorderLayout.SOUTH);
+
     }
 
     public JLabel getRundenLabel() {
