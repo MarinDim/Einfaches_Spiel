@@ -51,4 +51,9 @@ public class GewinnController {
         view.getPunkteLabel().setText(Integer.toString(model.getGesamtPunkte()));
     }
 
+    public void rundeZuruecksetzen(){
+        view.getSpielerField().setText("");
+        view.getComputerField().setText("");
+        view.getRundenLabel().setText("Ein Zahl von 1 bis 9 wählen");
+    }
 }
