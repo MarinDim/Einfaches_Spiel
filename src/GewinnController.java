@@ -52,6 +52,19 @@ public class GewinnController {
         }
 
         view.getPunkteLabel().setText(Integer.toString(model.getGesamtPunkte()));
+
+        if(ergebnis>0||model.hatGewonnen()==true){
+            view.getRundenLabel().setBackground(Color.green); //Alles auf grün setzen, wenn man gewonnen hat
+            view.getPunkteLabel().setBackground(Color.green);
+        }
+        else if(ergebnis<0||model.hatVerloren()==true){
+            view.getRundenLabel().setBackground(Color.red); //Alles auf rot setzen, wenn man verliert
+            view.getPunkteLabel().setBackground(Color.red);
+        }
+        else{
+            view.getRundenLabel().setBackground(Color.white);
+            view.getPunkteLabel().setBackground(Color.white);
+        }
     }
 
     public void rundeZuruecksetzen(){
