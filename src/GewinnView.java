@@ -11,5 +11,23 @@ public class GewinnView extends JFrame{
     private JTextField computerField;
     private JButton button;
 
+    public JLabel getRundenLabel() {
+        return rundenLabel;
+    }
 
+    public JLabel getPunkteLabel() {
+        return punkteLabel;
+    }
+
+    public JTextField getSpielerField() {
+        return spielerField;
+    }
+
+    public JTextField getComputerField() {
+        return computerField;
+    }
+
+    public JButton getButton() {
+        return button;
+    }
 }
