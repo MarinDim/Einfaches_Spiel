@@ -42,6 +42,15 @@ public class GewinnView extends JFrame{
         centerPanel.add(new JLabel("Deine Zahl:"));
         centerPanel.add(new JLabel("Computer:"));
 
+        spielerField=new JTextField();
+
+        computerField=new JTextField();
+        computerField.setEditable(false);
+
+        centerPanel.add(computerField);
+        centerPanel.add(spielerField);
+
+        add(centerPanel, BorderLayout.CENTER);
 
     }
 
