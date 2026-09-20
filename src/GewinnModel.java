@@ -4,7 +4,7 @@ public class GewinnModel {
     private int gesamtPunkte;
     private int spielerZahl;
     private int computerZahl;
-    private int runderErgebnis;
+    private int rundenErgebnis;
 
     public GewinnModel(){
         this.gesamtPunkte=30; //Startpunkte auf 30 setzen
@@ -21,13 +21,13 @@ public class GewinnModel {
 
         int abstand=this.spielerZahl-this.computerZahl; //Berechnen, wie nah die Schätzung war
         if(abstand==0){
-            runderErgebnis=20;
+            rundenErgebnis=20;
         }
         else if(abstand==1||abstand==-1){
-            runderErgebnis=5;
+            rundenErgebnis=5;
         }
         else{
-            runderErgebnis=-10;
+            rundenErgebnis=-10;
         }
     }
 
@@ -61,7 +61,7 @@ public class GewinnModel {
         return computerZahl;
     }
 
-    public int getRunderErgebnis() {
-        return runderErgebnis;
+    public int getRundenErgebnis() {
+        return rundenErgebnis;
     }
 }
