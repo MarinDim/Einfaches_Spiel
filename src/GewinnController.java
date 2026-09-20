@@ -53,6 +53,10 @@ public class GewinnController {
 
         view.getPunkteLabel().setText(Integer.toString(model.getGesamtPunkte()));
 
+
+
+
+
         if(ergebnis>0||model.hatGewonnen()==true){
             view.getRundenLabel().setBackground(Color.green); //Alles auf grün setzen, wenn man gewonnen hat
             view.getPunkteLabel().setBackground(Color.green);
