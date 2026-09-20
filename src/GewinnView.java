@@ -27,6 +27,11 @@ public class GewinnView extends JFrame{
         rundenLabel=new JLabel("Tippe eine Zahl von 1 bis 9");
         punkteLabel=new JLabel("Gesamtpunkte: 30");
 
+        rundenLabel.setOpaque(true);
+        punkteLabel.setOpaque(true);
+        rundenLabel.setBackground(Color.white);
+        punkteLabel.setBackground(Color.white);
+
         //Alle zum hauptpanel hinzufügen
         titelPanel.add(rundenTitelLabel);
         titelPanel.add(punkteTitelLabel);
